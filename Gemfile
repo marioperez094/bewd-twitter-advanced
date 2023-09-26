@@ -4,8 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.1.6.1'
-gem 'bundler', '~> 2.0.2'
+gem 'rails', '~> 6.1'
 # Use Puma as the app server
 gem 'puma', '>= 5.6.4'
 # Use SCSS for stylesheets
@@ -14,6 +13,7 @@ gem 'sass-rails', '~> 6.0'
 gem 'uglifier', '~> 4.2.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
+gem 'bundler', '~> 2.0.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '~> 4.4'
@@ -67,7 +67,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.1'
 
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.4'
+  gem 'sqlite3'
 end
 
 group :production do
